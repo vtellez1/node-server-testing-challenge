@@ -15,7 +15,7 @@ server.use('/api/auth', authRouter);
 server.use('/api/users', usersRouter);
 
 server.get('/', (req, res) => {
-    res.send("Hello, hello!");
+    res.status(200).json("Hello, hello!");
 });
 
 module.exports = server;
