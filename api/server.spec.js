@@ -23,7 +23,7 @@ describe('server', function(){
     it('should return greeting', function(){
         return request(server).get('/')
         .then(res => {
-            expect(res.body.api).toBe("Hello, hello!");
+            expect(res.body).toBe("Hello, hello!");
             })
         })
     })
