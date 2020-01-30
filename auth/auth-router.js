@@ -6,7 +6,7 @@ const { jwtSecret } = require('../config/secrets.js')
 
 const Users = require('../users/users-model.js');
 
-// endpoints beginning with /api/auth
+// endpoints for /api/auth
 
 router.post('/register', (req, res) => {
     let user = req.body;
