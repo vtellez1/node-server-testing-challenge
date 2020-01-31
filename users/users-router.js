@@ -13,7 +13,7 @@ router.get('/', restricted, (req, res) => {
     .catch(err => res.send(err));
 });
 
-router.delete('/:id', restricted, (req, res) => {
+router.delete('/:id', (req, res) => {
     Users.remove(req.params.id)
     .then(deleted =>{
       res.status(204).json(deleted);
